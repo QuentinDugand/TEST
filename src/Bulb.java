@@ -1,31 +1,38 @@
-
+/**
+ *  Cette classe représente une lampe
+ * @author dugandq
+ */
 
 public class Bulb
 {
 public static final int DEFAULT_POWER=100;
 
+/**
+ * La puissance de la lampe 
+ */
 private final int power;
 
-public boolean islit;
+private boolean islit;
 
-public Bulb (string[] args)
+public Bulb ()
 {
-	
+	this.power= 100;
+	this.islit=false;
 }
 
-public Bulb (string[] args)
+public Bulb (int p0)
 {
-	this.power= 150;
+	this.power= p0;
 }
 
-switch (on)
+public void switchOn()
 {
  this.islit=true;
 }
-switch (off)
-{
-this.islit=false;
-}
 
+public void switchOff()
+{
+ this.islit=false;
+}
 
 }
